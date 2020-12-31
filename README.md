@@ -1,6 +1,72 @@
-# Getting Started with Create React App
+## Required Tech Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Following packages are mandatory to use in this challenge:
+
+- Javascript, ES6
+- html
+- React
+- Redux, Redux-thunk
+- CSS, Styled-components
+- git
+
+Feel free to use any other open-source packages.
+
+---
+
+# Challenge
+
+Make sure to clone this repository as using git is a part of challenge.
+
+The challenge goes in different parts as stated in following:
+
+### Login page
+
+Create a login page with a form. login should only work with following credentials:
+
+> username: `frontend`
+>
+> password: `challenge`
+
+After hitting the submit button, show a loading component for 1 second, then, if credentials are valid, the app must be redirected to `/` route, otherwise an alert should be shown.
+
+> GOAL: basic usage of react, react-router, promises and alerts.
+
+### Login page styling
+
+Use styled-components and plain css only for styling the login page.
+
+> GOAL: basic usage of CSS and styled-components.
+
+### Main page
+
+There should be only one button in main page, with the label "Upload xlsx file".
+
+after clicking the button (which can be a file type input), user can choose a file to upload.
+
+after that a Modal should be shown, then app must parse the excel file into a table with editable cells.
+
+After user edits the table, there should be a save button, which will save the edited table in redux.
+
+After hitting save button, the modal should be closed, and the data saved in redux must be shown in main page.
+
+> GOAL: usage of modals, inputs and redux.
+
+---
+
+## Challenge Notes
+
+Remember to use react best-practices for components.
+
+> Tip: There should be only one component for similar purposes, e.g. A single button "component" will be used in login page, main page and the modal.
+
+Additional notes:
+
+- Using react hooks is a plus.
+- At least one react component must have documentation.
+- Readable codes are a plus.
+- Logical comments are a plus but not required in this challenge.
+
+---
 
 ## Available Scripts
 
@@ -29,42 +95,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good luck
